@@ -33,7 +33,7 @@ a {
 } 
 
 .container-fluid{
-  background: #16222A;
+  background: #1e1e20;
   background: -webkit-linear-gradient(59deg, rgb(62, 180, 141), #16222A);
   background: linear-gradient(59deg, rgb(62, 180, 141), #16222A);
   color: white;
@@ -224,3 +224,94 @@ input, textarea{
 .submit:hover{
   opacity: 0.6;
 }
+
+
+.secAbout{
+  color: white;
+}
+
+.aboutBody {
+  height: 100vh;
+  padding: 0px;
+  display: grid;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #1e1e20;
+}
+
+.wrapper{
+  box-sizing: content-box;
+  background-color: #1e1e20;
+  height: 80px;
+  padding: 100px 100px 100px 100px;
+  display: flex;
+  box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.2);
+}
+
+.Tech{
+  overflow: hidden;
+  color: #1e1e20;
+  text-align: center;
+}
+
+span{
+  background-color: aquamarine;
+  display: block;
+  height: 100px;
+  padding-left: 5px;
+  border: 1px solid black;
+  animation: spin_words 8s infinite;
+}
+
+@keyframes spin_words{
+  
+  10%{
+    transform: translateY(-112%);
+  }
+
+  25%{
+    transform: translateY(-100%);
+  }
+
+  35%{
+    transform: translateY(-212%);
+  }
+
+  50%{
+    transform: translateY(-200%);
+  }
+
+  60%{
+    transform: translateY(-312%);
+  }
+
+  75%{
+    transform: translateY(-300%);
+  }
+
+  85%{
+    transform: translateY(-412%);
+  }
+
+  100%{
+    transform: translateY(-400%);
+  }
+
+}
+
+.haveWorked{
+  padding: 20px 10px 20px 20px;
+}
+
+#wrap{
+  margin: 50px;
+}
+
+.projectSec{
+  padding: 20px 20px 20px 20px;
+}
+
+.card{
+  display: inline-block;
+}
+
+
