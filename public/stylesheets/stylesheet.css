@@ -1,0 +1,487 @@
+/************************Setting variable using root node*************************/
+:root {
+  --bg-color: #1e1e20;
+  --typewriterSpeed: 4s;
+  --typewriterCharacters: 18;
+}
+
+
+/*Body*/
+body {
+    padding: 0px;
+    font-family: 'Source Code Pro', monospace;
+    color: #FFFFFF;
+    background-color: #1e1e20;
+  }
+
+.mainPage{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+
+.intro{
+  padding: 0.5rem;
+}
+
+.memeoji{
+  width: 100%;
+  align-self: center;
+  padding-bottom: 3rem;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.memeoji img{
+  border-color: black;
+  border-style: groove;
+  width: 10%;
+  background-color: rgb(5, 61, 60);
+}
+
+
+#imgpro{
+    width: 100px;
+}
+
+.navbar{
+  padding: 0em;
+}
+
+
+.container-fluid{
+  background: #16222A;
+  background: -webkit-linear-gradient(59deg, rgb(62, 180, 141), #16222A);
+  background: linear-gradient(59deg, rgb(62, 180, 141), #16222A);
+  color: white;
+}
+
+.navbar-brand{
+  padding: 0em;
+  padding-left: 0rem;
+}
+
+.logoimg{
+  height: 2.5rem;
+  padding: 0.25rem;
+}
+
+.contMeClass{
+  background-color: rgb(45, 45, 45);
+}
+
+.aboutMeClass{
+  background-color: rgb(45, 45, 45);
+}
+
+/***************************About Body******************************/
+.intro{
+  margin: 0;
+  font-family: "Source Code Pro", monospace;
+  min-height: 30vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  grid-template-columns: min-content auto;
+  background: var(--bg-color);
+}
+
+
+h2 {
+  font-size: clamp(0.8rem, 2vw + 0.8rem, 3rem);
+  position: relative;
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+  width: max-content;
+}
+
+
+.intro h2 {
+  padding-top: 0.5rem;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  left: 0.3rem;
+  color: #69C9D0;
+}
+
+.intro h3 {
+  color: #EE1D52;
+}
+
+
+h2::before,
+h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h2::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+h2::after {
+  width: 0.125em;
+  background: rgb(255, 255, 255);
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+
+.intro h3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: #FFFFFF;
+  font-size: 1.75rem;
+  font-weight: 400;
+  padding: 0.60rem;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+}
+
+.tech{
+  background-color: #69C9D0;
+  border: #16222A solid 0.1rem;
+  font-size: 1.75rem;
+  font-weight: 400;
+  padding: 0.80rem;
+}
+
+
+.but1 {
+  width: fit-content;
+  justify-content: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #EE1D52;
+  border : #69C9D0 solid 0.1rem;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 3s ease calc(var(--typewriterSpeed) + 3s) forwards;
+}
+
+.intro > button > a {
+  color: #69C9D0;
+}
+
+#contMe{
+  padding-left: 1rem;
+}
+
+.navbar-brand{
+  border: black solid 0.2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 50%;
+  background-color: Black;
+  color: #69C9D0;
+}
+
+
+/****************************** Adding CSS Contact Us ***********************************************/
+
+.contact-form{
+  margin: 0;
+  font-family: "Source Code Pro", monospace;
+  min-height: 20vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background: var(--bg-color);
+  padding: 0.6rem 0.6em 0.6rem 0.6rem;
+}
+
+
+
+/************************* Adding CSS to the Tech Div************************************/
+
+.Tech{
+  margin: 0;
+  font-family: "Source Code Pro", monospace;
+  min-height: 10vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  grid-template-columns: min-content auto;
+  background: var(--bg-color);
+}
+
+
+
+
+/*************************Adding KeyFrames for Animation**********************************/
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*************************************** FOOTER **************************************************/
+
+footer {
+    background: #16222A;
+    background: -webkit-linear-gradient(59deg, rgb(62, 180, 141), #16222A);
+    background: linear-gradient(59deg, rgb(62, 180, 141), #16222A);
+    color: white;
+    margin-top:137px;
+  }
+  
+  footer a {
+    color: #fff;
+    font-size: 14px;
+    transition-duration: 0.2s;
+  }
+  
+  footer a:hover {
+    color: #FA944B;
+    text-decoration: none;
+  }
+  
+  .copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+  }
+  
+  .footer-middle {
+    padding-top: 2em;
+    color: white;
+  }
+
+/**************************************** Adding CSS to Project.hbs Page ************************************/
+
+  .project{
+    display: grid;
+    align-items: center;
+    place-content: center;
+    gap: 1rem;
+    font-family: "Source Code Pro", monospace;
+  }
+
+  .projecth1{
+    font-size: 1.2rem;
+    position: relative;
+    padding-left: 1rem;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+  }
+
+  .projecth1::before,
+  .projecth1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  }
+
+  .projecth1::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards;
+  }
+
+  .projecth1::after {
+    width: 0.125em;
+    background: rgb(255, 255, 255);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+      blink 750ms steps(var(--typewriterCharacters)) infinite;
+  }
+
+  .idk1 a{
+    color:rgb(62, 180, 141);
+  }
+
+  
+
+/***************************************************************************************************/
+
+  /*SOCİAL İCONS*/
+  
+  /* footer social icons */
+  
+  ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+  }
+  
+  ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+  }
+  
+  
+  /* footer social icons */
+  
+  .social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+  }
+  
+  .social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+  }
+  
+  .social-network a.icoFacebook:hover i,
+  .social-network a.icoLinkedin:hover i {
+    color: #fff;
+  }
+  
+  .social-network a.socialIcon:hover,
+  .socialHoverClass {
+    color: #44BCDD;
+  }
+  
+  .social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+  }
+  
+  .social-circle li i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .social-circle li a:hover i,
+  .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  
+  .social-circle i {
+    color: #595959;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+  }
+  
+  .social-network a {
+    background-color: #F9F9F9;
+  }
+
+
+
+  /******************************************** Adding Media Queries for Responsiveness ************************************/
+
+  @media only screen and (min-width:425px){ 
+      .mainPage{
+        display: inline-grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        padding: 3rem;
+        font-size: clamp(3rem 5rem 8rem);
+      }
+
+      .intro{
+        display: block;
+        text-align: left;
+        align-self: center;
+        padding-top: 5rem;
+      }
+
+      .memeoji img{
+        border-color: black;
+        border-style: groove;
+        border-radius: 10%;
+        width: auto;
+      }
+
+      #right{
+        text-align: center;
+      }
+
+      #aboutMeID{
+        text-align: center;
+      }
+
+      .tech{
+        margin: 0;
+        font-family: "Source Code Pro", monospace;
+        min-height: 10vh;
+        display: grid;
+        place-content: center;
+        text-align: center;
+        grid-template-columns: min-content auto;
+        color: #69C9D0;
+      }
+
+      .idk1 button{
+        padding: 0.5rem;
+      }
+
+      .idk1 a{
+        color:rgb(62, 180, 141);
+      }
+
+      #imgpro{
+        height: 10rem;
+        width: 10rem;
+      }
+
+      .projecth1{
+        font-size: clamp(0.8rem, 1.8rem, 4.5rem);
+      }
+
+    }
+    @media only screen and (min-width:1024px){
+        
+      .project{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding-top: 1rem;
+      }
+
+}
+
+    @media only screen and (min-width:1395px){
+      .project{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
+    }
