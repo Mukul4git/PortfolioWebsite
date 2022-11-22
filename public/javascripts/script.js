@@ -23,7 +23,16 @@ contactForm.addEventListener('submit', (e)=>{
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(formData)
-    })
+    }).then(clearForm())
+
+    function clearForm() {
+        person.value = null
+        email.value = null
+        subject.value = null
+        message.value = null 
+        confirm('Message sent')
+ }
+
 
  })
 //    .then((response) => response.json())
